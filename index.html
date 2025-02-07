@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyectos y Servicios de Mantenimiento SANE</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/scripts.js"></script>
+</head>
+<body>
+    <!-- Barra lateral -->
+
+    <div class="sidebar">
+        <div class="logo">
+            <strong>SANE</strong>
+            <span>Mantenimiento Industrial</span>
+        </div>
+        <hr class="separator"> <!-- Línea separadora -->
+        <nav class="menu">
+            <a href="#inicio"><i class="fas fa-home"></i> Inicio</a>
+            <a href="#quienes-somos"><i class="fas fa-user"></i> ¿Quiénes somos?</a>
+            <a href="#servicios"><i class="fas fa-tools"></i> Servicios</a>
+            <a href="#proyectos"><i class="fas fa-briefcase"></i> Proyectos</a>
+            <a href="#contacto"><i class="fas fa-envelope"></i> Contacto</a>
+        </nav>
+    </div>
+
+    <div class="main-content">
+    <div id="inicio" class="banner">
+        <div class="overlay"></div> <!-- Fondo translúcido -->
+        <div class="content">
+            <img class="logo" src="images\logo.png" alt="Logo SANE">
+            <div class="decorative-line"></div>
+            <h1>Proyectos y Servicios de Mantenimiento SANE</h1>
+            <p>Innovación y servicio en mantenimiento industrial para satisfacer sus necesidades.</p>
+            <div class="decorative-line"></div>
+        </div>
+    </div>
+            
+
+    <section id="quienes-somos" class="services">
+        <h2>¿QUIÉNES SOMOS?</h2>
+        <h3>Somos una empresa mexicana dedicada al mantenimiento preventivo, correctivo y predictivo </h3>
+        <h3>a equipos e instalaciones eléctricas, mecánicas, electromecánicas, neumáticas, tecnológicas y de control, </h3>
+        <h3>así como suministro y elaboración de refacciones, componentes y estructuras.</h3>
+        <div class="container">
+            <div class="row">
+              <!-- Tarjeta para MISIÓN -->
+              <div class="col-md-6">
+                <div class="service-card">
+                <h3 style="color: #000000;"><strong>MISIÓN</strong></h3>
+                  <p>Brindamos servicios integrales de mantenimiento y proyectos de ingeniería con un enfoque innovador y compromiso inquebrantable...</p>
+                  <img src="images/mision.jpg" alt="Imagen Misión">
+                </div>
+              </div>
+              <!-- Tarjeta para VISIÓN -->
+              <div class="col-md-6">
+                <div class="service-card">
+                  <h3 style="color: #000000;"><strong>VISIÓN</strong></h3>
+                  <p>Ser reconocidos como líderes en la industria de mantenimiento y proyectos de ingeniería, destacando por nuestra capacidad técnica...</p>
+                  <img src="images/vision.jpg" alt="Imagen Visión">
+                </div>
+              </div>
+              <div class="col-md-12">
+                <div class="service-card">
+                  <h3 style="color: #000000;"><strong>VALORES</strong></h3>
+                  <p><strong>Excelencia Operativa e Innovación:</strong> Nos comprometemos a alcanzar la excelencia operativa a través de la búsqueda continua de la excelencia técnica...</p>
+                  <p><strong>Compromiso y Colaboración:</strong> En el corazón de nuestra cultura empresarial está el compromiso con el cliente...</p>
+                  <p><strong>Ética y Seguridad:</strong> La integridad y la ética son los pilares fundamentales que guían nuestras operaciones...</p>
+                  <i class="fas fa-users fa-3x mb-3"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+    </section>
+
+    <section id="servicios" class="services">
+        <h2>Nuestros Servicios</h2>
+        <h3>Soluciones eficientes y sostenibles para garantizar el desarrollo de su industria.</h3>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="service-card" onclick="showDescription('Ingeniería', 'Diseño y ejecución de proyectos con personal altamente capacitado.')">
+                       <!--  <img src="images\vision.jpg" alt="Ingeniería"> -->
+                        <i class="fas fa-cogs fa-3x mb-3"></i>
+                        <h3 style="color: #000000;">Ingeniería</h3>
+                        <p>Diseño y ejecución de proyectos con personal altamente capacitado.</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="service-card" onclick="showDescription('Mantenimiento', 'Preventivo, correctivo y predictivo para asegurar la continuidad operativa.')">
+                      <!--   <img src="images\vision.jpg" alt="Mantenimiento"> -->
+                        <i class="fas fa-solid fa-hammer fa-3x mb-3"></i>
+                        <h3 style="color: #000000;">Mantenimiento</h3>
+                        <p>Preventivo, correctivo y predictivo para asegurar la continuidad operativa.</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="service-card" onclick="showDescription('Voz y Datos', 'Infraestructura y telecomunicaciones para su negocio.')">
+                    <!--     <img src="images\vision.jpg" alt="Voz y Datos">-->
+                        <i class="fas fa-network-wired fa-3x mb-3"></i>
+                        <h3 style="color: #000000;">Voz y Datos</h3>
+                        <p>Infraestructura y telecomunicaciones para su negocio.</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="service-card" onclick="showDescription('Programación', 'Desarrollo de software y soluciones tecnológicas a medida.')">
+                    <!--     <img src="images\vision.jpg" alt="Programación"> -->
+                        <i class="fas fa-code fa-3x mb-3"></i>
+                        <h3 style="color: #000000;">Programación</h3>
+                        <p>Desarrollo de software y soluciones tecnológicas a medida.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="service-modal" class="modal" onclick="closeModal()">
+        <div class="modal-content">
+            <button class="close-btn" onclick="closeModal()">&times;</button>
+            <h3></h3>
+            <p></p>
+        </div>
+    </div>
+
+    <section id="proyectos" class="services">
+        <h2>Proyectos Destacados</h2>
+        <p>Explora los proyectos que hemos realizado con éxito para nuestros clientes.</p>
+        
+        <div class="logo-grid">
+            <div class="logo-item">
+                <img src="images/quala-logo2.png" alt="Empresa 1">
+            </div>
+        </div>
+    
+        <div class="project-description">
+            <div class="project-row">
+                <img src="images/tuberia.jpg" alt="Tuberías Grado Alimenticio">
+                <div class="project-text">
+                    <h3><strong>Cambio de Tuberías de Agua Grado Alimenticio</strong></h3>
+                    <p>Recientemente reemplazamos sistemas de tuberías de agua con especificaciones de grado alimenticio, asegurando estándares de higiene y eficiencia en instalaciones industriales.</p>
+                </div>
+            </div>
+            <div class="project-row reverse">
+                <img src="images/mover.jpg" alt="Reubicación de Equipos">
+                <div class="project-text">
+                    <h3><strong>Reubicación de Equipos</strong></h3>
+                    <p>Reorganizamos el layout industrial, optimizando la disposición de equipos para mejorar la eficiencia operativa y el flujo de trabajo.</p>
+                </div>
+            </div>
+            <div class="project-row">
+                <img src="images/banda.jpg" alt="Mantenimiento de Bandas">
+                <div class="project-text">
+                    <h3><strong>Mantenimiento de Bandas</strong></h3>
+                    <p>Realizamos mantenimiento preventivo y correctivo a bandas transportadoras, maximizando su vida útil y garantizando un rendimiento óptimo.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <footer id="contacto" class="services">
+        <h2>Contáctanos</h2>
+        <div class="container">
+            <p><i class="fas fa-map-marker-alt"></i> <strong>Dirección:</strong> Independencia 218, CP 50220, Toluca, Estado de México</p>
+            <p><i class="fas fa-phone"></i> <strong>Teléfonos: </strong>7291431175</p>
+            <p><i class="fas fa-envelope"></i> <strong>Correo Electrónico:</strong>PROYECTOS_SANE@OUTLOOK.COM</a></p>
+        </div>
+                  <!-- Links adicionales -->
+                  <div class="links">
+                    <p>
+                        <i class="fas fa-clock"></i> Horarios:<br>
+                        Lun - Sáb: 08:00 - 17:00<br>
+                        Dom: Cerrado
+                    </p>
+                </div>
+    </footer>
+
+    <footer>
+        <p>&copy; 2024 Proyectos y Servicios de Mantenimiento SANE. Todos los derechos reservados.</p>
+    </footer>
+</div>
+</body>
+</html>
